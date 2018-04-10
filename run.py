@@ -3,8 +3,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 groceries = { "fruit": ["bananas", "pears", {"apples": ["granny smith",
-    "macintosh", "gala"]}],
-            "personal care": ["toothpaste", "chapstick"]}
+    "macintosh", "gala"]}], "personal care": ["toothpaste", "chapstick"]}
 
 @app.route('/')
 def hey_world():
